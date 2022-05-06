@@ -47,16 +47,16 @@ let g:nvim_tree_icons = {
     \   }
     \ }
 
-lua << EOF
-require'nvim-tree'.setup {}
-EOF
+" Load nvimtree config
+source $HOME/.config/nvim/nvimtree-setup.vim
+
 nnoremap <C-n> :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
 " More available functions:
 " NvimTreeOpen
 " NvimTreeClose
-" NvimTreeFocus
+nnoremap <leader>] :NvimTreeFocus<CR>
 " NvimTreeFindFileToggle
 " NvimTreeResize
 " NvimTreeCollapse
