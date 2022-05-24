@@ -10,7 +10,7 @@
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+" Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 
 " Collection of common configurations for the Nvim LSP client
 Plug 'neovim/nvim-lspconfig'
@@ -50,7 +50,7 @@ let g:tokyonight_style = "night"
 let g:tokyonight_italic_functions = 1
 let g:tokyonight_sidebars = [ "qf", "vista_kind", "terminal", "packer" ]
 
-colorscheme tokyonight
+" colorscheme tokyonight
 
 " Set completeopt to have a better completion experience
 " :help completeopt
